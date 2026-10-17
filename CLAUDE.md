@@ -15,6 +15,11 @@
 
 - コミット規約は `git-conventions` スキルに従う（`[claude]` 接頭辞、Co-Authored-By トレーラー、最初のコミットの前に `git config user.email` が noreply アドレスかを確認）。
 - push の承認は**都度確認**とする。commit は作業の区切りで自動で行ってよいが、`git push` は毎回承認を得る。
+- push の前には毎回、次の点検を行う（`public-release-review` スキルの手順1・2の観点の縮小版）。
+  1. 機械点検: 未 push のコミット（`git log origin/main..HEAD`）の author・committer が noreply アドレスか。追加した行（`git diff origin/main..HEAD`）とコミットメッセージに、ユーザー名・ローカルのパス・メールアドレス・認証情報らしき文字列・PC 固有の情報が無いか。
+  2. 目視点検: 変更した文書（特に QA表・CLAUDE.md・Notebook の出力）に、作成者の環境や事情を推測させる記述が無いか。
+  - push の承認を QA表に記録する行には「push 前の点検済み」と添える。
+- 使い捨ての環境（scratchpad の venv 等）を作る場合も、ランタイムの環境づくりに当たるので、事前にユーザーの承認を得る。
 - 既定のブランチは `main`。
 
 ## 教材の作り方
