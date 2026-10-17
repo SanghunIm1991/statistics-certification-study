@@ -8,7 +8,8 @@
 
 | 順番 | 文書 | 内容 | 前提 |
 |---|---|---|---|
-| 1 | [環境構築: Python と Notebook の準備](docs/setup.md) | 教材専用の仮想環境を作り、VS Code で Notebook を動かす | なし |
+| 1 | [学習ロードマップ](docs/roadmap.md) | 試験の概要と、ステップ0〜9で学ぶ内容の一覧 | なし |
+| 2 | [環境構築: Python と Notebook の準備](docs/setup.md) | 教材専用の仮想環境を作り、VS Code で Notebook を動かす | なし |
 
 各ステップの教材は、作成しだい追加します。
 
