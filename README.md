@@ -10,6 +10,7 @@
 |---|---|---|---|
 | 1 | [学習ロードマップ](docs/roadmap.md) | 試験の概要と、ステップ0〜9で学ぶ内容の一覧 | なし |
 | 2 | [環境構築: Python と Notebook の準備](docs/setup.md) | 教材専用の仮想環境を作り、VS Code で Notebook を動かす | なし |
+| 3 | [ステップ1-1 記述統計: 1変数データ](docs/step1-1_univariate.md)（演習: [Notebook](notebooks/step1-1_univariate.ipynb)） | 代表値・散らばり・箱ひげ図・分布の形。2台のセンサのばらつきを比べる | 1（Notebook を動かす場合は 2） |
 
 各ステップの教材は、作成しだい追加します。
 
