@@ -8,3 +8,4 @@
 | 2026-10-17 | Git環境 | ローカルの構築案（`git init -b main`、このリポジトリだけに `pull.rebase=false`、`.gitignore`〈Python・Jupyter・OS/エディタ・Claude Code の個人設定〉、プロジェクトの `CLAUDE.md`）を実施してよいか。手元専用フォルダ `local/` を除外対象として設けるか | 実施する。ただし `local/` は作らない（必要になったら追加する） |
 | 2026-10-17 | Git環境 | GitHub のリポジトリ名（private で作成）。選択肢: `statistics-certification-study`（推奨。フォルダ名とそろえる）／リモートはまだ作らない | `statistics-certification-study` で作る |
 | 2026-10-17 | Git環境 | `git push` の承認の粒度。選択肢: 都度確認（推奨）／コミット＋プッシュを1セット | 都度確認。commit は自動で行ってよいが、push は毎回承認を得る |
+| 2026-10-17 | Git環境 | GitHub に private のリポジトリを作り、初期コミットを push してよいか（push 前に追跡ファイルとコミットの名義を機械点検済み）。選択肢: 作成して push（推奨）／作成のみ／今は作らない | 作成して push。visibility が private、既定のブランチが `main` であることを確認した |
