@@ -19,6 +19,10 @@
 
 ## 教材の作り方
 
+- 教材は、作成者以外の学習者も1人で先頭から読む教科書として書く（`learning-text-authoring` スキルに従う）。役割分担を前提にした言い回しを本文に書かない。
+- 閲覧は GitHub の Web 表示を想定し、文書間は相対リンクにする。入口は `README.md` の「読む順番」の表。
+- 手順は Windows を本文にし、macOS・Linux の違いは「未確認」と明記した注記で添える。Notebook のエディタは VS Code（Microsoft 公式の Python・Jupyter 拡張機能）を例にする。
+- ライセンスは、文章が CC BY 4.0、コードが MIT（`LICENSE`）。著作権者の表記は「statistics-certification-study contributors」。
 - 概念の説明と手計算の例は Markdown、Python を使う演習（工学の例題・シミュレーション）は Jupyter Notebook に分ける。
 - Notebook は出力を残してコミットする。コミットの前に、出力にローカルのパスやユーザー名が残っていないかを確かめる。
 - 例題のデータは、乱数のシードを固定した模擬データを基本にし、生成するコードを Notebook に残す。公開データセットを使う場合は、ライセンスと再配布の可否を確かめてからにする。
@@ -26,5 +30,6 @@
 
 ## Python の環境
 
-- python.org 版の Python で作るプロジェクト専用の venv（`.venv`、Git 管理外）を使う。Python 本体とパッケージの導入はユーザー自身が行う。
-- venv を作った後は、`.venv\Scripts\python` を直接呼ぶ形に統一する。
+- python.org 版の Python で作るプロジェクト専用の venv（`.venv`、Git 管理外）を使う。Python 本体とパッケージの導入はユーザー自身が行う。手順は `docs/setup.md`。
+- 導入済み: numpy・scipy・matplotlib・ipykernel。Notebook は VS Code で開く（JupyterLab は入れていない）。
+- `.venv\Scripts\python` を直接呼ぶ形に統一する（有効化のスクリプトは使わない）。

@@ -9,3 +9,13 @@
 | 2026-10-17 | Git環境 | GitHub のリポジトリ名（private で作成）。選択肢: `statistics-certification-study`（推奨。フォルダ名とそろえる）／リモートはまだ作らない | `statistics-certification-study` で作る |
 | 2026-10-17 | Git環境 | `git push` の承認の粒度。選択肢: 都度確認（推奨）／コミット＋プッシュを1セット | 都度確認。commit は自動で行ってよいが、push は毎回承認を得る |
 | 2026-10-17 | Git環境 | GitHub に private のリポジトリを作り、初期コミットを push してよいか（push 前に追跡ファイルとコミットの名義を機械点検済み）。選択肢: 作成して push（推奨）／作成のみ／今は作らない | 作成して push。visibility が private、既定のブランチが `main` であることを確認した |
+| 2026-10-17 | ツール確認 | Python 3.13（python.org 版）は導入済み、venv・NumPy・SciPy・matplotlib・`ipykernel`・Jupyter は未導入。Notebook を開く手段をどうするか。選択肢: エディタの Notebook 機能＋venv に `ipykernel`（推奨。導入物が少なく、ローカルサーバーを立てない）／JupyterLab を venv に入れる | エディタの Notebook 機能を使い、venv には numpy・scipy・matplotlib・ipykernel を入れる |
+| 2026-10-17 | ツール確認 | venv とパッケージの導入時期。選択肢: 最初の Notebook を作る前（推奨）／今すぐ | 今すぐ。導入はユーザー自身が行い、Claude は導入後に版を確認する |
+| 2026-10-17 | ツール確認 | （ユーザーからの指示）環境構築を、作成者以外も使える学習者向けの手順書として残す | 手順書を作る。導入後の版の確認では、Python 3.13.16・numpy 2.5.4・scipy 1.18.1・matplotlib 3.11.2・ipykernel 7.4.0 を確認した |
+| 2026-10-17 | ツール確認 | 手順書が対象にする OS。選択肢: Windows を本文にし、macOS・Linux は「未確認」の注記で添える（推奨）／Windows のみ | Windows を本文にし、他の OS は注記で添える |
+| 2026-10-17 | ツール確認 | 手順書での Notebook のエディタの書き方。選択肢: VS Code（Microsoft 公式の Python・Jupyter 拡張機能）を例に書く（推奨）／エディタを特定しない | VS Code を例に書く |
+| 2026-10-17 | ツール確認 | 手順書の置き場所と入口。選択肢: `docs/setup.md`＋`README.md` を新設し「読む順番」を置く（推奨。閲覧は GitHub の Web 表示、文書間は相対リンク）／`docs/setup.md` のみ | `docs/setup.md`＋`README.md` |
+| 2026-10-17 | ツール確認 | 文章とコードのライセンスをいつ決めるか。選択肢: 公開前に決める（推奨）／今決める（文章 CC BY 4.0・コード MIT） | 今決める。文章 CC BY 4.0・コード MIT |
+| 2026-10-17 | ツール確認 | （Claude独自判断）`LICENSE` の著作権者の表記を「statistics-certification-study contributors」とした。個人のアカウント名を文書に載せないため。誤りがあれば後日修正する前提 | — |
+| 2026-10-17 | ツール確認 | （Claude独自判断）手順書では仮想環境の有効化のスクリプトを使わず、`.venv\Scripts\python` を直接呼ぶ形にした。PowerShell の実行ポリシーを緩めずに済むため。一般的な有効化の方法との違いは本文で補足した。誤りがあれば後日修正する前提 | — |
+| 2026-10-17 | ツール確認 | （Claude独自判断）必要な Python の版を「3.12 以上」と書いた。導入された numpy 2.5.4・scipy 1.18.1 のパッケージ情報の `Requires-Python` が 3.12 以上だったため。誤りがあれば後日修正する前提 | — |
